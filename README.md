@@ -112,9 +112,3 @@ service cloud.firestore {
 }
 Reemplazar la configuración en firebase.js con las credenciales del proyecto
 
-📞 Soporte
-Para problemas técnicos o preguntas sobre la aplicación, contactar a:
-
-Nombre: Gabriel Alexander Garcia Quintana
-
-Carnet: 20200636
