@@ -5,7 +5,7 @@ Nombre	Gabriel Alexander Garcia Quintana
 Carnet	20200636
 
 🎥 Video Demostrativo
-[LINK]
+[Aun no se ha realizado]
 
 Nota: El video debe ser accesible sin necesidad de solicitar permisos especiales
 
