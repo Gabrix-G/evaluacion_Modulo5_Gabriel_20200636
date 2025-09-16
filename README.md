@@ -1,13 +1,28 @@
 Aplicación de Autenticación con Expo y Firebase
-Información del Estudiante
-Nombre: Gabriel Alexander Garcia Quintana
+📋 Información del Estudiante
+Campo	Valor
+Nombre	Gabriel Alexander Garcia Quintana
+Carnet	20200636
 
-Carnet: 20200636
+🎥 Video Demostrativo
+[LINK]
 
-Video Demostrativo (Link: )
+Nota: El video debe ser accesible sin necesidad de solicitar permisos especiales
 
-Dependencias Utilizadas:
+🚀 Características Principales
+✨ Splash Screen al iniciar la aplicación
 
+👥 Registro de usuarios con Firebase Authentication
+
+🔐 Inicio de sesión con autenticación por correo electrónico
+
+🏠 Pantalla principal con información del usuario
+
+✏️ Edición de perfil de usuario
+
+💾 Almacenamiento de datos en Firestore
+
+🛠️ Tecnologías Utilizadas
 Dependencias Principales
 json
 "dependencies": {
@@ -16,7 +31,6 @@ json
   "react-native": "0.71.0",
   "firebase": "^10.0.0"
 }
-
 Dependencias de Navegación
 json
 "dependencies": {
@@ -25,46 +39,82 @@ json
   "react-native-screens": "~3.20.0",
   "react-native-safe-area-context": "4.5.0"
 }
-
 Dependencias de Desarrollo
 json
 "devDependencies": {
   "@babel/core": "^7.20.0"
 }
-Instalación
+📦 Instalación y Uso
 Clonar o descargar el proyecto
 
-Ejecutar npm install para instalar las dependencias
+Instalar dependencias:
 
-Ejecutar npx expo start para iniciar la aplicación
+bash
+npm install
+Configurar Firebase:
 
-Funcionalidades
+Crear proyecto en Firebase Console
 
-Splash Screen inicial
+Habilitar Authentication con proveedor Email/Password
 
-Registro de usuarios con Firebase Authentication
+Crear base de datos Firestore
 
-Inicio de sesión con autenticación por correo electrónico
+Configurar las credenciales en firebase.js
 
-Pantalla principal con información del usuario
+Ejecutar la aplicación:
 
-Edición de perfil de usuario
+bash
+npx expo start
+Escanear el código QR con la app Expo Go en dispositivo móvil
 
-Almacenamiento de datos en Firestore
+🗃️ Estructura de Datos
+Los usuarios se almacenan en Firestore con la siguiente estructura:
 
-Estructura de Datos
-Los usuarios se almacenan en Firestore con la siguiente información:
+Campo	Tipo	Descripción
+name	string	Nombre completo del usuario
+email	string	Correo electrónico
+password	string	Contraseña (hash)
+age	number	Edad del usuario
+specialty	string	Especialidad del usuario
+createdAt	timestamp	Fecha de creación
+updatedAt	timestamp	Fecha de actualización
+📁 Estructura del Proyecto
+text
+evaluacionmodulo5gabriel/
+├── assets/
+│   ├── icon.png
+│   ├── splash.png
+│   ├── adaptive-icon.png
+│   └── favicon.png
+├── screens/
+│   ├── SplashScreen.js
+│   ├── LoginScreen.js
+│   ├── RegisterScreen.js
+│   ├── HomeScreen.js
+│   └── EditProfileScreen.js
+├── firebase.js
+├── App.js
+├── app.json
+└── package.json
+🔧 Configuración de Firebase
+Habilitar Authentication con proveedor Email/Password
 
-Nombre completo
+Configurar Firestore Database con las siguientes reglas iniciales:
 
-Correo electrónico
+javascript
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /{document=**} {
+      allow read, write: if true;
+    }
+  }
+}
+Reemplazar la configuración en firebase.js con las credenciales del proyecto
 
-Contraseña (hash)
+📞 Soporte
+Para problemas técnicos o preguntas sobre la aplicación, contactar a:
 
-Edad
+Nombre: Gabriel Alexander Garcia Quintana
 
-Especialidad
-
-Fecha de creación
-
-Fecha de actualización
+Carnet: 20200636
